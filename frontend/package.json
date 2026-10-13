@@ -1,0 +1,30 @@
+{
+  "name": "kelolakerja-frontend",
+  "version": "1.0.0",
+  "description": "Employee Attendance & Reporting System with Face Recognition - Frontend",
+  "productName": "KelolaKerja | Sistem Absensi & Pelaporan",
+  "private": true,
+  "scripts": {
+    "dev": "quasar dev",
+    "build": "quasar build",
+    "test": "node test/runner.js"
+  },
+  "dependencies": {
+    "vue": "^2.6.14",
+    "quasar": "^1.15.24",
+    "@quasar/extras": "^1.10.0",
+    "axios": "^0.21.4",
+    "vue-router": "^3.5.3",
+    "vuex": "^3.6.2",
+    "@vladmandic/face-api": "^1.7.12"
+  },
+  "devDependencies": {
+    "@quasar/app": "^2.2.8",
+    "workbox-webpack-plugin": "^5.1.4"
+  },
+  "engines": {
+    "node": ">= 14",
+    "npm": ">= 6"
+  }
+}
+

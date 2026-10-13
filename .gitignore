@@ -1,0 +1,58 @@
+# =====================================================================
+# KelolaKerja — Git Ignore Configuration
+# =====================================================================
+
+# Environment & Secrets (Keep .env.example tracked)
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# Node.js / Frontend Dependencies & Caches
+node_modules/
+frontend/node_modules/
+frontend/.quasar/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm/
+
+# Note: frontend/dist/spa/ (including /vendor/face-api.js and /models/)
+# is intentionally NOT ignored so Docker Compose can run out-of-the-box.
+
+# Perl / Backend Runtime & Build Artifacts
+backend/local/
+backend/.carton/
+MYMETA.*
+Makefile.old
+blib/
+pm_to_blib
+*.bs
+*.o
+*.so
+*.pid
+*.sock
+
+# Uploaded Biometric Captures & Runtime Logs
+backend/storage/uploads/*
+!backend/storage/uploads/.gitkeep
+*.log
+logs/
+
+# Database & Redis Local Dumps
+*.sql.gz
+dump.rdb
+db_data/
+
+# Editor, IDE & AI Assistant Directories
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+.agents/
+.aider-desk/
+skills-lock.json
+
