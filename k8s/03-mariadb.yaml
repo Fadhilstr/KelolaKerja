@@ -199,7 +199,8 @@ spec:
           configMap:
             name: mariadb-init-sql
         - name: db-data
-          emptyDir: {}
+          persistentVolumeClaim:
+            claimName: mariadb-pvc
 ---
 apiVersion: v1
 kind: Service
