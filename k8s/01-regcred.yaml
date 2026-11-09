@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Secret
+metadata:
+  name: regcred-gitlab
+  namespace: kelolakerja
+type: kubernetes.io/dockerconfigjson
+stringData:
+  .dockerconfigjson: |
+    {
+      "auths": {
+        "registry.gitlab.com": {
+          "username": "oauth2",
+          "password": "glpat-21uBFyEEh61jTs3W7ThzF2M6MQpvOjEKdTpxYzA0bg8.01.1710fy86f",
+          "auth": "b2F1dGgyOmdscGF0LTIxdUJGeUVFaDYxalRzM1c3VGh6RjJNNk1RcHZPakVLZFRweFl6QTBiZzguMDEuMTcxMGZ5ODZm"
+        }
+      }
+    }
