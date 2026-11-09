@@ -55,7 +55,7 @@ services:
     image: nginx:alpine
     container_name: kelolakerja_gateway
     ports:
-      - "8080:80"
+      - "${WEB_PORT:-8081}:80"
     volumes:
       - ./docker/nginx.conf:/etc/nginx/conf.d/default.conf:ro
       - ./frontend/dist/spa:/usr/share/nginx/html:ro
